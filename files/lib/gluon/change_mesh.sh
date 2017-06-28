@@ -4,7 +4,7 @@ host=`uname -n`
 okt0=${host:0:2}
 okt1=${host:2:1}"0"
 suffix=$okt0":"$okt1
-if [ `echo $suffix | egrep "^([0-9A-F]{2}:){1}[0-9A-F]{2}$"` ];
+if [ `echo $suffix | egrep "^([0-9A-Fa-f]{2}:){1}[0-9A-Fa-f]{2}$"` ];
 then
     # valide MAC
 	newIBSS=$meshSSID_prefix":"$suffix

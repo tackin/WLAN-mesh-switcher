@@ -3,7 +3,7 @@
 # Idea:
 We like to separate our mesh-network in order to keep the batman-traffic small.
 First we separate our net-segments on the Gateways. Therefore every nodes fastd key is stored on our gateways in the net-segment we want the node to run in.
-Our policy is so that we have hostnames with leading postcode. We think it is possible to take the first 3 numbers to separate the postcode-regions into according to our net-segments.
+Our policy is so that we have hostnames with leading postcode. We think it is possible to take the first 3 numbers to separate the postcode-regions according to our net-segments.
 
 # The traveling nodes
 I think we should prevent every node with the wrong postcode to mesh in a foreign net-segment to prevent bridging.

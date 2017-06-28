@@ -14,5 +14,7 @@ My idea is, to let the node scan the wifi-area every second minute and change it
 To make this work, one first node must be on the new mesh-net. This is triggered with the nodes having the proper uplink and switching to the right net without scanning the wifi-area first.
 
 
-# todo
-fastd-trigger switching
+# Howto implement
+1. we role out the script without the trigger in the first gluon-release 
+2. we role out the script with the trigger with the second gluon-release
+

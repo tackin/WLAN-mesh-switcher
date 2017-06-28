@@ -7,9 +7,9 @@ Our policy is so that we have hostnames with leading postcode. We think it is po
 
 # The traveling nodes
 I think we should prevent every node with the wrong postcode to mesh in a foreign net-segment to prevent bridging.
-We can do this by spanning different mesh-nets in every segment. To make the node find its correct mesh-net, we let him scan for the mesh-net he should be in according to his hostname and key. If he finds this net, he switches to this mesh. Otherwise he keeps his basic mehs-configuration.
+We can do this by spanning different mesh-nets in every segment. To make the node find its correct mesh-net, we let him scan for the mesh-net he should be in according to his hostname and key. If it finds its net, the node switches to this mesh. Otherwise the node keeps its basic bootup-mesh-configuration.
 
-My idea is to let the node scan his wifi-area every second minute and change its setting if he is right.
+My idea is, to let the node scan the wifi-area every second minute and change its setting if matching.
 
 To make this work, one first node must be on the new mesh-net. This is triggered with the nodes having the proper uplink and switching to the right net without scanning the wifi-area first.
 
